@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4755,10 +4755,10 @@ Source: amp_227161.pdf</description>
 </classes>
 <parts>
 <part name="U$4" library="PCA9615" deviceset="PCA9615" device=""/>
-<part name="R19" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="120Ohm"/>
+<part name="R19" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="600Ohm"/>
 <part name="R20" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="120Ohm"/>
 <part name="R21" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="600Ohm"/>
-<part name="R22" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="120Ohm"/>
+<part name="R22" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="600Ohm"/>
 <part name="R23" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="120Ohm"/>
 <part name="R24" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="600Ohm"/>
 <part name="X4" library="con-kycon" library_urn="urn:adsk.eagle:library:157" deviceset="GLX-S-88M" device="" package3d_urn="urn:adsk.eagle:package:7680/1"/>
@@ -4780,10 +4780,10 @@ Source: amp_227161.pdf</description>
 <part name="X2" library="con-kycon" library_urn="urn:adsk.eagle:library:157" deviceset="GLX-S-88M" device="" package3d_urn="urn:adsk.eagle:package:7680/1"/>
 <part name="U$3" library="PCA9615" deviceset="PCA9615" device=""/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="600Ohm"/>
-<part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1"/>
+<part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="120Ohm"/>
 <part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="600Ohm"/>
 <part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="600Ohm"/>
-<part name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1"/>
+<part name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="120Ohm"/>
 <part name="R18" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0414/15" package3d_urn="urn:adsk.eagle:package:26094/1" value="600Ohm"/>
 <part name="X1" library="con-kycon" library_urn="urn:adsk.eagle:library:157" deviceset="GLX-S-88M" device="" package3d_urn="urn:adsk.eagle:package:7680/1"/>
 <part name="CHANNEL1" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="?227161*" device="1-" package3d_urn="urn:adsk.eagle:package:6212/1" technology="-2"/>
@@ -5282,66 +5282,72 @@ Source: amp_227161.pdf</description>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="CHANNEL4" gate="G$1" pin="1"/>
 <pinref part="U$4" gate="G$1" pin="SCL"/>
-<wire x1="-33.02" y1="-152.4" x2="-7.62" y2="-152.4" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-152.4" x2="-7.62" y2="-149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
 <pinref part="CHANNEL4" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="SDA"/>
-<wire x1="-33.02" y1="-154.94" x2="-7.62" y2="-154.94" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-154.94" x2="-7.62" y2="-157.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="CHANNEL3" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="SDA"/>
-<wire x1="-33.02" y1="-86.36" x2="-7.62" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-86.36" x2="-7.62" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-149.86" x2="-7.62" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-154.94" x2="-33.02" y2="-154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="CHANNEL3" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="SCL"/>
-<wire x1="-33.02" y1="-83.82" x2="-7.62" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-83.82" x2="-7.62" y2="-81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="CHANNEL2" gate="G$1" pin="2"/>
-<pinref part="U$2" gate="G$1" pin="SDA"/>
-<wire x1="-35.56" y1="-17.78" x2="-7.62" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-17.78" x2="-7.62" y2="-20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="CHANNEL2" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="SCL"/>
-<wire x1="-35.56" y1="-15.24" x2="-7.62" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-15.24" x2="-7.62" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="CHANNEL3" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="-81.28" x2="-7.62" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-86.36" x2="-33.02" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="CHANNEL1" gate="G$1" pin="2"/>
 <pinref part="U$3" gate="G$1" pin="SDA"/>
-<wire x1="-48.26" y1="48.26" x2="-7.62" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="48.26" x2="-7.62" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="45.72" x2="-38.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="45.72" x2="-38.1" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="CHANNEL1" gate="G$1" pin="1"/>
+<wire x1="-38.1" y1="50.8" x2="-48.26" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="CHANNEL1" gate="G$1" pin="1"/>
 <pinref part="U$3" gate="G$1" pin="SCL"/>
-<wire x1="-48.26" y1="50.8" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="50.8" x2="-7.62" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="CHANNEL1" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="48.26" x2="-12.7" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="48.26" x2="-12.7" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="50.8" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="CHANNEL2" gate="G$1" pin="1"/>
+<wire x1="-35.56" y1="-15.24" x2="-7.62" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="SDA"/>
+<wire x1="-7.62" y1="-15.24" x2="-7.62" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="SCL"/>
+<wire x1="-7.62" y1="-12.7" x2="-25.4" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-12.7" x2="-25.4" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="CHANNEL2" gate="G$1" pin="2"/>
+<wire x1="-25.4" y1="-17.78" x2="-35.56" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="CHANNEL3" gate="G$1" pin="1"/>
+<wire x1="-33.02" y1="-83.82" x2="-10.16" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="-83.82" x2="-10.16" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="SDA"/>
+<wire x1="-10.16" y1="-88.9" x2="-7.62" y2="-88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="CHANNEL4" gate="G$1" pin="1"/>
+<wire x1="-33.02" y1="-152.4" x2="-12.7" y2="-152.4" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-152.4" x2="-12.7" y2="-157.48" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="SDA"/>
+<wire x1="-12.7" y1="-157.48" x2="-7.62" y2="-157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

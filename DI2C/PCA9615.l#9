@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -87,43 +87,9 @@
 <smd name="VDD(B)" x="2" y="1" dx="0.95" dy="0.15" layer="1"/>
 <smd name="DSDAM" x="2" y="0.5" dx="0.95" dy="0.15" layer="1"/>
 <smd name="DSDAP" x="2" y="0" dx="0.95" dy="0.15" layer="1"/>
-<smd name="DSCLP" x="2" y="-0.5" dx="0.95" dy="0.15" layer="1" rot="R180"/>
+<smd name="DSLAP" x="2" y="-0.5" dx="0.95" dy="0.15" layer="1" rot="R180"/>
 <smd name="DSCLM" x="2" y="-1" dx="0.95" dy="0.15" layer="1" rot="R180"/>
-</package>
-<package name="DUALBNC_CONNECTOR">
-<pad name="IN2" x="0" y="0" drill="1" diameter="1.27" shape="offset" rot="R180"/>
-<pad name="OUT2" x="0" y="2.54" drill="1" diameter="1.27" shape="offset" rot="R180"/>
-<pad name="OUT1" x="0" y="-2.54" drill="1" diameter="1.27" shape="offset" rot="R180"/>
-<pad name="IN1" x="2.54" y="0" drill="1" diameter="1.27" shape="offset"/>
-<hole x="8.90490625" y="5.075490625" drill="2"/>
-<hole x="8.87143125" y="-5.075490625" drill="2"/>
-<wire x1="-4" y1="10" x2="-4" y2="-10" width="0.127" layer="21"/>
-<wire x1="-4" y1="10" x2="12" y2="10" width="0.127" layer="21"/>
-<wire x1="-4" y1="-10" x2="12" y2="-10" width="0.127" layer="21"/>
-<wire x1="12" y1="-10" x2="12" y2="-7" width="0.127" layer="21"/>
-<wire x1="12" y1="-7" x2="12" y2="7" width="0.127" layer="21"/>
-<wire x1="12" y1="10" x2="12" y2="7" width="0.127" layer="21"/>
-<wire x1="12" y1="7" x2="18" y2="7" width="0.127" layer="21"/>
-<wire x1="18" y1="7" x2="18" y2="5" width="0.127" layer="21"/>
-<wire x1="18" y1="5" x2="18" y2="-5" width="0.127" layer="21"/>
-<wire x1="18" y1="-5" x2="18" y2="-7" width="0.127" layer="21"/>
-<wire x1="18" y1="-7" x2="12" y2="-7" width="0.127" layer="21"/>
-<wire x1="18" y1="5" x2="30" y2="5" width="0.127" layer="21"/>
-<wire x1="30" y1="5" x2="30" y2="-5" width="0.127" layer="21" curve="-180"/>
-<wire x1="30" y1="-5" x2="18" y2="-5" width="0.127" layer="21"/>
-</package>
-<package name="NX3008CBKV,115">
-<smd name="P$1" x="-0.7" y="0.85" dx="0.31" dy="0.2" layer="1"/>
-<smd name="P$2" x="-0.7" y="0.35" dx="0.31" dy="0.2" layer="1"/>
-<smd name="P$3" x="-0.7" y="-0.15" dx="0.31" dy="0.2" layer="1"/>
-<wire x1="-0.5" y1="1.2" x2="0.8" y2="1.2" width="0.127" layer="1"/>
-<wire x1="-0.5" y1="1.2" x2="-0.5" y2="-0.5" width="0.127" layer="1"/>
-<wire x1="-0.5" y1="-0.5" x2="0.8" y2="-0.5" width="0.127" layer="1"/>
-<wire x1="0.8" y1="-0.5" x2="0.8" y2="1.2" width="0.127" layer="1"/>
-<smd name="P$4" x="1" y="0.85" dx="0.31" dy="0.2" layer="1"/>
-<smd name="P$5" x="1" y="0.35" dx="0.31" dy="0.2" layer="1"/>
-<smd name="P$6" x="1" y="-0.15" dx="0.31" dy="0.2" layer="1"/>
-<circle x="-0.15" y="0.85" radius="0.070709375" width="0.127" layer="1"/>
+<text x="-1.5" y="1.5" size="1.27" layer="1">PCA9615</text>
 </package>
 </packages>
 <symbols>
@@ -140,103 +106,9 @@
 <pin name="DSDAM" x="17.78" y="-12.7" length="middle" rot="R180"/>
 <pin name="GND" x="-5.08" y="-22.86" length="middle" rot="R90"/>
 </symbol>
-<symbol name="DUALBNC_CONNECTOR">
-<wire x1="0" y1="0" x2="-7.62" y2="7.62" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="0" x2="-7.62" y2="-7.62" width="0.254" layer="94" curve="-90"/>
-<wire x1="-22.86" y1="7.62" x2="-15.24" y2="0" width="0.254" layer="94" curve="-90"/>
-<wire x1="-22.86" y1="-7.62" x2="-15.24" y2="0" width="0.254" layer="94" curve="90"/>
-<pin name="OUT1" x="9.61995625" y="2.969303125" length="middle" rot="R180"/>
-<pin name="IN1" x="7.62" y="0" length="middle" rot="R180"/>
-<pin name="IN2" x="8.4537125" y="-3.69131875" length="middle" rot="R180"/>
-<pin name="OUT2" x="4.2898375" y="-5.930646875" length="middle" rot="R180"/>
-<circle x="-3" y="0" radius="3" width="0.254" layer="94"/>
-<circle x="-18" y="0" radius="3" width="0.254" layer="94"/>
-<wire x1="-18" y1="3" x2="-18" y2="0" width="0.254" layer="94"/>
-<wire x1="-18" y1="0" x2="-18" y2="-3" width="0.254" layer="94"/>
-<wire x1="-21" y1="0" x2="-18" y2="0" width="0.254" layer="94"/>
-<wire x1="-18" y1="0" x2="-15" y2="0" width="0.254" layer="94"/>
-<wire x1="-6" y1="0" x2="-3" y2="0" width="0.254" layer="94"/>
-<wire x1="-3" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="-3" y1="3" x2="-3" y2="0" width="0.254" layer="94"/>
-<wire x1="-3" y1="0" x2="-3" y2="-3" width="0.254" layer="94"/>
-<wire x1="-18" y1="0" x2="-16.1727375" y2="-3.670375" width="0.254" layer="94" curve="90"/>
-<wire x1="-16.1727375" y1="-3.670375" x2="3.8272625" y2="-3.670375" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="3" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="3" x2="5" y2="3" width="0.254" layer="94"/>
-<wire x1="-18.0291375" y1="-5.9337375" x2="1.9708625" y2="-5.9337375" width="0.254" layer="94"/>
-</symbol>
-<symbol name="NX3008CBKV,115">
-<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="2.54" x2="-7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-10.16" y2="0" width="0.254" layer="94"/>
-<pin name="D1-1" x="-2.54" y="7.62" length="middle" rot="R270"/>
-<pin name="S1-3" x="-2.54" y="-7.62" length="middle" rot="R90"/>
-<pin name="G1-2" x="-15.24" y="0" length="middle"/>
-<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-2.54" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
-<pin name="S2-4" x="2.54" y="-7.62" length="middle" rot="R90"/>
-<pin name="D2-6" x="2.54" y="7.62" length="middle" rot="R270"/>
-<pin name="G1-5" x="15.24" y="0" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<text x="5.08" y="2.54" size="1.778" layer="94">NX3008CBKV,115
-
-</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PCA9615">
-<gates>
-<gate name="G$1" symbol="PCA9615" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="PCA9615">
-<connects>
-<connect gate="G$1" pin="DSCLM" pad="DSCLM"/>
-<connect gate="G$1" pin="DSCLP" pad="DSCLP"/>
-<connect gate="G$1" pin="DSDAM" pad="DSDAM"/>
-<connect gate="G$1" pin="DSDAP" pad="DSDAP"/>
-<connect gate="G$1" pin="EN" pad="EN"/>
-<connect gate="G$1" pin="GND" pad="VSS"/>
-<connect gate="G$1" pin="SCL" pad="SCL"/>
-<connect gate="G$1" pin="SDA" pad="SDA"/>
-<connect gate="G$1" pin="VBB" pad="VDD(B)"/>
-<connect gate="G$1" pin="VDD" pad="VDD(A)"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DUALBNC_CONNECTOR">
-<gates>
-<gate name="G$1" symbol="DUALBNC_CONNECTOR" x="10.16" y="0"/>
-</gates>
-<devices>
-<device name="" package="DUALBNC_CONNECTOR">
-<connects>
-<connect gate="G$1" pin="IN1" pad="IN1"/>
-<connect gate="G$1" pin="IN2" pad="IN2"/>
-<connect gate="G$1" pin="OUT1" pad="OUT1"/>
-<connect gate="G$1" pin="OUT2" pad="OUT2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NX3008CBKV,115">
 <gates>
 </gates>
 <devices>
@@ -250,10 +122,4 @@
 </devicesets>
 </library>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
